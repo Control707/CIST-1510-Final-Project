@@ -1,0 +1,12 @@
+nav {display:none;}
+		  
+main a:after { content: " (" attr(href) ") "; }
+
+
+footer {text-align: center;
+		font-size: 0.8em;}
+
+
+
+
+
