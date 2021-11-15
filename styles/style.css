@@ -1,3 +1,6 @@
+*{box-sizing: border-box;}
+
+
 #wrapper {
   width: 80%;
   margin-right: auto;
@@ -19,6 +22,7 @@ nav {
 
 nav ul {
   padding: 30px;
+  font-size:1.2em;
 }
 
 nav ul li a {
@@ -48,12 +52,13 @@ main {
   min-height: 800px;
   display: block;
   border-radius: 15px;
+  margin-right:10px;
 }
 
 header {
   border-radius: 15px;
   border: 2px solid #323643;
-  margin: 0px 0px 10px 150px;
+  margin: 0px 10px 10px 150px;
   color: #d72323;
   background-color: #f6f4f4;
   height: 135px;
@@ -64,10 +69,11 @@ header {
   background-repeat: no-repeat;
   width: 135px;
   height: 135px;
-  margin-top: 25px;
+  margin-top: 22.5px;
   margin-left: 10px;
   float: left;
   border-radius: 15px;
+  border: 2px solid #323643;
 }
 
 header h1 {
@@ -90,6 +96,7 @@ footer {
   font-size: 0.8em;
   margin-left: 0px;
   margin-right: 0px;
+ 
 }
 
 .more {
@@ -99,7 +106,7 @@ footer {
 video {
   width: 100%;
   padding: 15px;
-  box-sizing: border-box;
+  
 }
 
 table {
@@ -127,7 +134,7 @@ img {
 }
 
 #images {
-  padding: 7px;
+  padding: 4px;
   text-align: center;
 }
 
@@ -160,9 +167,10 @@ label {
 #submit {
   margin-left: 10px;
 }
-
+.main{min-height: calc(100vh - 70px);}
 .padding {
-  padding-top: 20px;
+   height: 50px;
+  
 }
 
 .btn {
