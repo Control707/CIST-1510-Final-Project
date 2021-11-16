@@ -273,4 +273,29 @@ label {
     padding: 0.5em 0 0 0.5em;
     margin-right: 0.5em;
   }
+  #logo {
+    background-image: url(../content/75.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+   
+    margin-left: 0px;
+    float: left;
+    
+    }
+  header {
+    
+     margin: 0px 0px 0px 80px;
+    padding-top:0px;
+    color: #d72323;
+    background-color: #f6f4f4;
+    height: 75px;
+  }
+    header h1 {
+    text-align: center;
+    padding: 0px;
+    font-size: 1em;
+    margin-top:-20px;
+    
+  }
 }
