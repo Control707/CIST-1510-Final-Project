@@ -11,7 +11,7 @@
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #2e302b;
+   background-color: #2e302b; /* bisque ?? */
   border-radius: 15px;
   overflow: hidden;
   
@@ -42,7 +42,7 @@ nav ul li a {
 nav li {
   list-style-type: none;
   width: auto;
-  padding: 15px 5px 5px 0px;
+  padding: 15px 5px 5px 0px;  /* 0px 5px 5px 0px ??*/
 }
 nav a:link {
   color: #eeeeee;
@@ -98,7 +98,7 @@ header h1 {
   margin:0;
    color: #f6f4f4;
    text-shadow: 2px 2px #914C4C;
-font-family: AgencyGothicCT-Medium;
+font-family: 'AgencyGothicCT-Medium', sans-serif;;
 letter-spacing: 3px;
 font-weight: lighter;
 }
@@ -113,7 +113,7 @@ main {
   width: auto;
   margin-left: 150px;
   padding: 10px;
-  background-color: #eeeeee;
+  background-color: #eeeeee;   /*#EAEAEA  ??*/
   min-height: 800px;
   display: block;
   border-radius: 15px;
@@ -133,7 +133,7 @@ font-weight: lighter;
 footer {
   text-align: center;
   font-size: 0.8em;
-  margin-left: 0px;
+  margin-left: 0px;   /* margin-left: 130px; ?? */
   margin-right: 0px;
  
 }
