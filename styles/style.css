@@ -5,11 +5,7 @@
   src: url(../styles/AgencyGothicCT-Medium.ttf);
   
 }
-@font-face {
-  font-family: FinenessProRegularCond;
-  src: url(../styles/FinenessProRegularCond.ttf);
-  
-}
+
 
 #wrapper {
   width: 80%;
@@ -18,7 +14,7 @@
   background-color: #2e302b;
   border-radius: 15px;
   overflow: hidden;
-   font-family: FinenessProRegularCond;
+  
  
 }
 
