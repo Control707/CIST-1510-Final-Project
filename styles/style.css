@@ -11,10 +11,9 @@
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #2e302b; /* bisque ?? */
+  background-color: #2e302b;
   border-radius: 15px;
   overflow: hidden;
-  padding-bottom: 5px;
 }
 
 nav {
@@ -24,7 +23,7 @@ nav {
   padding: 5px;
   text-align: left;
   padding: 0px;
-  font-family: AgencyGothicCT-Medium;
+  font-family: "AgencyGothicCT-Medium", sans-serif;
   letter-spacing: 3px;
   font-weight: lighter;
 }
@@ -41,7 +40,7 @@ nav ul li a {
 nav li {
   list-style-type: none;
   width: auto;
-  padding: 15px 5px 5px 0px; /* 0px 5px 5px 0px ??*/
+  padding: 15px 5px 5px 0px;
 }
 nav a:link {
   color: #eeeeee;
@@ -58,7 +57,7 @@ main a:link {
   color: #ec1c24;
 }
 main a:visited {
-  color: #9f4c4c;
+  color: #ec1c24;
 }
 main a:hover {
   color: #2e302b;
@@ -88,7 +87,7 @@ header {
 
 header h1 {
   text-align: center;
-  padding: 0px;
+  padding: 5px 0 0 0;
   font-size: 3em;
   background-color: #ec1c24;
   width: 100%;
@@ -101,8 +100,8 @@ header h1 {
 }
 
 body {
-  font-size: 1.2em;
-  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
   background-color: #141915;
 }
 
@@ -110,7 +109,8 @@ main {
   width: auto;
   margin-left: 150px;
   padding: 10px;
-  background-color: #eeeeee; /*#EAEAEA  ??*/
+  padding-bottom: 30px;
+  background-color: #eeeeee;
   min-height: 800px;
   display: block;
   border-radius: 15px;
@@ -121,15 +121,24 @@ h2 {
   text-align: center;
   background-color: #ec1c24;
   color: #f6f4f4;
-  font-family: AgencyGothicCT-Medium;
+  font-family: "AgencyGothicCT-Medium", sans-serif;
   letter-spacing: 3px;
   font-weight: lighter;
+  padding: 5px 0 0 0;
+}
+
+dd {
+  padding-bottom: 25px;
+}
+
+dt {
+  font-weight: 600;
 }
 
 footer {
   text-align: center;
   font-size: 0.8em;
-  margin-left: 0px; /* margin-left: 130px; ?? */
+  margin-left: 0px;
   margin-right: 0px;
 }
 
@@ -139,8 +148,8 @@ video {
 }
 
 table {
-  margin: auto;
   border: #303841 solid 1px;
+  margin: auto;
 }
 td {
   padding: 7px;
@@ -170,20 +179,24 @@ img {
 form {
   max-width: 90vw;
 }
+
 fieldset,
 legend {
-  max-width: 90vw;
+  max-width: 85vw;
   margin-bottom: 15px;
 }
 
 input {
   max-width: 85vw;
   padding: 5px;
+  float: right;
+  margin-right: 25vw;
 }
 
 label {
   float: left;
-  width: 120px;
+  margin-right: 15px;
+  margin-bottom: 5px;
   padding-left: 10px;
 }
 
@@ -196,9 +209,11 @@ label {
 #submit {
   margin-left: 10px;
 }
+
 .main {
   min-height: calc(100vh - 70px);
 }
+
 .padding {
   height: 50px;
 }
@@ -272,6 +287,9 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
+  table {
+  }
+
   nav {
     margin: 0;
   }
@@ -292,14 +310,17 @@ label {
     padding-top: 1px;
     padding-bottom: 25px;
   }
+
   footer a {
     padding-bottom: 15px;
     margin-bottom: 15px;
   }
+
   h2 {
     padding: 0.5em 0 0 0.5em;
     margin-right: 0.5em;
   }
+
   #logo {
     background-image: url(../content/75.png);
     background-repeat: no-repeat;
@@ -333,10 +354,19 @@ label {
     letter-spacing: 1px;
     font-weight: lighter;
   }
+
   .main {
     min-height: calc(100vh - 100px);
   }
   .padding {
     height: 70px;
+  }
+
+  label {
+    padding-top: 10px;
+  }
+
+  fieldset {
+    border: 0;
   }
 }
