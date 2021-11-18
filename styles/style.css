@@ -287,9 +287,6 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
-  table {
-  }
-
   nav {
     margin: 0;
   }
@@ -366,7 +363,8 @@ label {
     padding-top: 10px;
   }
 
-  fieldset {
-    border: 0;
+  input {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
