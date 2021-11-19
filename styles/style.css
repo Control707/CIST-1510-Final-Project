@@ -14,7 +14,7 @@
   background-color: #2e302b;
   border-radius: 15px;
   overflow: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -54,13 +54,17 @@ nav a:hover {
   color: #ec1c24;
 }
 
-main a:link {
+a.email:link, a.email:visited{
+  color: black;}
+
+a.email:visited{
+  color: #9f4c4c;}
+  
+footer a:link, main a:link, footer a:visited, main a:visited{
   color: #ec1c24;
 }
-main a:visited {
-  color: #9f4c4c;
-}
-main a:hover {
+ 
+footer a:hover, main a:hover {
   color: #2e302b;
 }
 
@@ -87,7 +91,7 @@ header {
 
 header h1 {
   text-align: center;
-  padding: 0px;
+  padding: 3px 0 0 0;
   font-size: 3em;
   background-color: #ec1c24;
   width: 100%;
@@ -112,8 +116,9 @@ main {
   background-color: #eeeeee;
   min-height: 700px;
   display: block;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
   margin-right: 10px;
+  font-size: 1.1rem;
 }
 
 h2 {
@@ -123,7 +128,7 @@ h2 {
   font-family: "AgencyGothicCT-Medium", sans-serif;
   letter-spacing: 3px;
   font-weight: lighter;
-  padding: 0;
+  padding: 3px 0 0 0;
   font-size: 1.8em;
 }
 
@@ -136,11 +141,16 @@ dt {
 }
 
 footer {
+  width: auto;
+  margin-left: 150px;
+  padding: 10px;
+  background-color: #eeeeee;
+  display: block;
+  border-radius: 0 0 15px 15px;  
+  margin-right: 10px;
   text-align: center;
   font-size: 0.8em;
-  margin-left: 0px;
-  margin-right: 0px;
-}
+ }
 
 video {
   width: 100%;
@@ -181,7 +191,7 @@ form {
 }
 
 fieldset,
-legend {
+ legend {
   max-width: 85vw;
   margin-bottom: 15px;
 }
@@ -194,8 +204,6 @@ input {
 label {
   float: left;
   width: 120px;
-  margin-right: 15px;
-  margin-bottom: 5px;
   padding-left: 10px;
 }
 
@@ -208,14 +216,6 @@ label {
 #submit {
   margin-left: 10px;
   margin-right: 25px;
-}
-
-.main {
-  min-height: calc(100vh - 110px);
-  font-size: 1.1rem;
-}
-.padding {
-  height: 100px;
 }
 
 .btn {
@@ -247,6 +247,7 @@ label {
     min-width: 0;
     margin: 0;
     padding: 0;
+	border-radius: 0;
   }
 
   h1 {
@@ -256,6 +257,10 @@ label {
     padding-bottom: 1em;
     font-size: 2.5em;
   }
+  
+  h2 {
+    padding: 0.5em 0 0 0.5em;
+   }
 
   nav {
     float: none;
@@ -283,9 +288,13 @@ label {
   main {
     margin: 0;
     font-size: 90%;
-    min-height: 200px;
+	border-radius: 0;
   }
-}
+  footer{
+	  margin:0;
+	  border-radius: 0;
+  }
+ }
 
 @media only screen and (max-width: 768px) {
   nav {
@@ -298,46 +307,49 @@ label {
     padding: 0.2em;
     width: auto;
     border-bottom: 1px solid #d72323;
-    font-size: 90%;
+    font-size: 85%;
   }
-
+  
   nav li {
     display: block;
   }
 
   main {
     padding-top: 1px;
-    min-height: 0;
+    min-height: 400px;
+	font-size: 0.75em;
   }
 
   h2 {
-    padding: 0 0 0 0.5em;
-    margin-right: 0.5em;
+    padding: 0.1em 0 0 0.5em;
   }
+  
   #logo {
     background-image: url(../content/75.png);
     background-repeat: no-repeat;
     width: 75px;
     height: 75px;
-    margin-left: 0px;
+    margin-left: 1px;
     float: left;
+	
   }
   header {
-    margin: 0px 0px 0px 80px;
+    margin: 0px 2px 0px 80px;
     padding: 0px;
     border: 1px solid #f6f4f4;
     height: 75px;
-    font-size: 0.85em;
+    font-size: 0.75em;
     padding-top: 0;
     display: flex;
     align-items: center;
     background-color: #ec1c24;
     color: #f6f4f4;
+	border-radius
   }
   header h1 {
     text-align: center;
     padding-left: 0;
-    padding-top: 0;
+    padding-top: 0.1em;
     margin: 0;
     width: 100%;
     text-shadow: 1px 1px #914c4c;
@@ -345,21 +357,22 @@ label {
     font-weight: lighter;
   }
   footer {
-    font-size: 60%;
+    font-size: 0.65em;
+	margin:0;
+	border-radius:0 0 0 0px;
+ 
   }
-  .main {
-    min-height: calc(100vh - 80px);
+    
+  table{
+	border-collapse: collapse;
   }
-  .padding {
-    height: 70px;
+	
+  th, td{
+	padding: 2px;
   }
-
   label {
-    padding-top: 10px;
+	padding-left: 0;
   }
 
-  input {
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
+ 
 }
