@@ -173,6 +173,10 @@ tr {
   background: #2e302b;
 }
 
+tr:hover {
+  background-color: black;
+}
+
 table a:any-link {
   color: white;
   text-decoration: none;
