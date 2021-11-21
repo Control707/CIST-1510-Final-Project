@@ -54,17 +54,24 @@ nav a:hover {
   color: #ec1c24;
 }
 
-a.email:link, a.email:visited{
-  color: black;}
+a.email:link,
+a.email:visited {
+  color: black;
+}
 
-a.email:visited{
-  color: #9f4c4c;}
-  
-footer a:link, main a:link, footer a:visited, main a:visited{
+a.email:visited {
+  color: #9f4c4c;
+}
+
+footer a:link,
+main a:link,
+footer a:visited,
+main a:visited {
   color: #ec1c24;
 }
- 
-footer a:hover, main a:hover {
+
+footer a:hover,
+main a:hover {
   color: #2e302b;
 }
 
@@ -146,11 +153,11 @@ footer {
   padding: 10px;
   background-color: #eeeeee;
   display: block;
-  border-radius: 0 0 15px 15px;  
+  border-radius: 0 0 15px 15px;
   margin-right: 10px;
   text-align: center;
   font-size: 0.8em;
- }
+}
 
 video {
   width: 100%;
@@ -158,17 +165,37 @@ video {
 }
 
 table {
-  border: #303841 solid 1px;
-  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: white;
+}
+
+table a:any-link {
+  color: white;
+  text-decoration: none;
+}
+table a:hover {
+  color: #ec1c24;
+  text-decoration: none;
+}
+
+th {
+  background: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #ccc;
 }
 td {
-  padding: 7px;
-  border: #303841 solid 1px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
-th {
-  padding: 7px;
-  border: #303841 solid 1px;
-}
+
 .rating {
   text-align: center;
 }
@@ -191,7 +218,7 @@ form {
 }
 
 fieldset,
- legend {
+legend {
   max-width: 85vw;
   margin-bottom: 15px;
 }
@@ -247,7 +274,7 @@ label {
     min-width: 0;
     margin: 0;
     padding: 0;
-	border-radius: 0;
+    border-radius: 0;
   }
 
   h1 {
@@ -257,10 +284,10 @@ label {
     padding-bottom: 1em;
     font-size: 2.5em;
   }
-  
+
   h2 {
     padding: 0.5em 0 0 0.5em;
-   }
+  }
 
   nav {
     float: none;
@@ -288,13 +315,70 @@ label {
   main {
     margin: 0;
     font-size: 90%;
-	border-radius: 0;
+    border-radius: 0;
   }
-  footer{
-	  margin:0;
-	  border-radius: 0;
+  footer {
+    margin: 0;
+    border-radius: 0;
   }
- }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Location";
+  }
+  td:nth-of-type(3):before {
+    content: "Phone";
+  }
+  td:nth-of-type(4):before {
+    content: "Customer Rating";
+  }
+}
 
 @media only screen and (max-width: 768px) {
   nav {
@@ -309,7 +393,7 @@ label {
     border-bottom: 1px solid #d72323;
     font-size: 85%;
   }
-  
+
   nav li {
     display: block;
   }
@@ -317,13 +401,13 @@ label {
   main {
     padding-top: 1px;
     min-height: 400px;
-	font-size: 0.75em;
+    font-size: 0.75em;
   }
 
   h2 {
     padding: 0.1em 0 0 0.5em;
   }
-  
+
   #logo {
     background-image: url(../content/75.png);
     background-repeat: no-repeat;
@@ -331,8 +415,8 @@ label {
     height: 75px;
     margin-left: 1px;
     float: left;
-	
   }
+
   header {
     margin: 0px 2px 0px 80px;
     padding: 0px;
@@ -344,8 +428,8 @@ label {
     align-items: center;
     background-color: #ec1c24;
     color: #f6f4f4;
-	border-radius
   }
+
   header h1 {
     text-align: center;
     padding-left: 0;
@@ -356,23 +440,71 @@ label {
     letter-spacing: 1px;
     font-weight: lighter;
   }
+
   footer {
     font-size: 0.65em;
-	margin:0;
-	border-radius:0 0 0 0px;
- 
-  }
-    
-  table{
-	border-collapse: collapse;
-  }
-	
-  th, td{
-	padding: 2px;
-  }
-  label {
-	padding-left: 0;
+    margin: 0;
+    border-radius: 0 0 0 0px;
   }
 
- 
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Location";
+  }
+  td:nth-of-type(3):before {
+    content: "Phone";
+  }
+  td:nth-of-type(4):before {
+    content: "Customer Rating";
+  }
+
+  label {
+    padding-left: 0;
+  }
 }
