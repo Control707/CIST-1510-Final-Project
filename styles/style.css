@@ -168,9 +168,9 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: white;
+
+tr {
+  background: #2e302b;
 }
 
 table a:any-link {
@@ -191,6 +191,7 @@ th {
   border: 1px solid #ccc;
 }
 td {
+  color: white;
   padding: 6px;
   border: 1px solid #ccc;
   text-align: left;
