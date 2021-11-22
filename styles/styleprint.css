@@ -1,12 +1,58 @@
-nav {display:none;}
-		  
-main a:after { content: " (" attr(href) ") "; }
+nav {
+	display:none;
+}
+
+video {
+	display:none;
+}
+
+h1, h2 {
+	text-align: center;
+}
+	  
+main a:after {
+	content: " (" attr(href) ") "; 
+}
+
+.phone a:after {
+	content: none;
+}
+
+.location a:after {
+	content: none;
+}
+
+#images {
+  text-align: center;
+}
+
+.phone {
+	white-space: nowrap;
+	width: auto;
+}
+
+.rating {
+	text-align: center;
+}
 
 
-footer {text-align: center;
-		font-size: 0.8em;}
+footer{
+	margin-top:20px;
+	text-align: center;
+	font-size: 0.8em;
+}
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
 
-
-
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
