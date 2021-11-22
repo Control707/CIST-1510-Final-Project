@@ -489,3 +489,23 @@ label {
 	margin-bottom: 5px;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  header {
+	margin: 0;
+	border-radius: 0;
+	height: 60px;
+  }
+	
+  #logo {
+	display: none;
+  }
+  nav {
+	font-size: 1.1em;
+  }
+  #submit {
+	  margin-right: 10px;
+  }   
+  .btn {
+  max-width: 60%;}
+}
