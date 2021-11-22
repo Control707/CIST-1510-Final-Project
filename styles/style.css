@@ -481,12 +481,17 @@ label {
   
   #submit {
 	  margin-left: 5px;
+	  font-weight: normal;
   }  
   
   fieldset,
   legend {
 	max-width: 100%;
 	margin-bottom: 5px;
+  }
+  
+  video {
+	  padding: 5px;
   }
 }
 
