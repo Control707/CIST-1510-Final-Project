@@ -11,7 +11,7 @@
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #2e302b;
+  background-color: #2f3332;
   border-radius: 15px;
   overflow: hidden;
   padding-bottom: 10px;
@@ -72,7 +72,7 @@ main a:visited {
 
 footer a:hover,
 main a:hover {
-  color: #2e302b;
+  color: #2f3332;
 }
 
 #logo {
@@ -170,7 +170,7 @@ table {
 }
 
 tr {
-  background: #2e302b;
+  background: #2f3332;
 }
 
 tr:hover {
@@ -199,6 +199,10 @@ td {
   padding: 6px;
   border: 1px solid #ccc;
   text-align: left;
+}
+.phone {
+  white-space: nowrap;
+  width: auto;
 }
 
 .rating {
@@ -230,19 +234,22 @@ legend {
 
 input {
   max-width: 85vw;
-  padding: 5px;
+  padding: 4px;
+  font-size: 0.9em;
 }
 
 label {
   float: left;
   width: 120px;
   padding-left: 10px;
+  padding-top: 4px;
 }
 
 #message {
-  margin-left: 10px;
+  margin-left: -110px;
   max-width: 90vw;
   margin-top: 15px;
+  font-size: 1em;
 }
 
 #submit {
@@ -291,7 +298,7 @@ label {
   }
 
   h2 {
-    padding: 0.5em 0 0 0.5em;
+    padding: 0.1em 0 0 0;
   }
 
   nav {
@@ -328,7 +335,7 @@ label {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
   nav {
     margin: 0;
   }
@@ -353,7 +360,7 @@ label {
   }
 
   h2 {
-    padding: 0.1em 0 0 0.5em;
+    padding-top: 0.1em;
   }
 
   #logo {
@@ -379,20 +386,17 @@ label {
   }
 
   header h1 {
-    text-align: center;
     padding-left: 0;
     padding-top: 0.1em;
     margin: 0;
-    width: 100%;
     text-shadow: 1px 1px #914c4c;
     letter-spacing: 1px;
-    font-weight: lighter;
   }
 
   footer {
     font-size: 0.65em;
     margin: 0;
-    border-radius: 0 0 0 0px;
+    border-radius: 0;
   }
 
   /* Force table to not be like tables anymore */
@@ -463,5 +467,25 @@ label {
 
   label {
     padding-left: 0;
+	margin-left: 5px;
+	padding-top: 0px;
+  }
+  
+  #message {
+	  margin-left: 5px;
+	  margin-top:5px;
+	  font-size: 1.2em;
+	  width: 100%;
+	  
+  }
+  
+  #submit {
+	  margin-left: 5px;
+  }  
+  
+  fieldset,
+  legend {
+	max-width: 100%;
+	margin-bottom: 5px;
   }
 }
