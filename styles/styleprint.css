@@ -1,25 +1,29 @@
+/* Remove navigation and video when printing */
 nav {
-	display:none;
+  display: none;
 }
 
 video {
-	display:none;
+  display: none;
 }
 
-h1, h2 {
-	text-align: center;
+/* center titles */
+h1,
+h2 {
+  text-align: center;
 }
-	  
+
+/* Display link after text */
 main a:after {
-	content: " (" attr(href) ") "; 
+  content: " (" attr(href) ") ";
 }
 
 .phone a:after {
-	content: none;
+  content: none;
 }
 
 .location a:after {
-	content: none;
+  content: none;
 }
 
 #images {
@@ -27,19 +31,18 @@ main a:after {
 }
 
 .phone {
-	white-space: nowrap;
-	width: auto;
+  white-space: nowrap;
+  width: auto;
 }
 
 .rating {
-	text-align: center;
+  text-align: center;
 }
 
-
-footer{
-	margin-top:20px;
-	text-align: center;
-	font-size: 0.8em;
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 table {
